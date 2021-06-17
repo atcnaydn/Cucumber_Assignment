@@ -1,0 +1,203 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3768634700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on the Techfios dashboard page",
+            "match": {
+              "location": "Steps.user_is_on_the_Techfios_dashboard_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 18,
+        "name": "",
+        "description": "",
+        "id": "validate-techfios-new-account-functionality;;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 4783711900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Steps.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 406259400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enters the \"demo@techfios.com\" and \"abc123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "demo@techfios.com",
+                  "offset": 17
+                },
+                {
+                  "val": "abc123",
+                  "offset": 41
+                }
+              ],
+              "location": "Steps.user_enters_and(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1843736400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks submit",
+            "match": {
+              "location": "Steps.user_clicks_submit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 65500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User should log in to dashboard page",
+            "match": {
+              "location": "Steps.user_should_log_in_to_dashboard_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 137246700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User clicks on bank and cash",
+            "match": {
+              "location": "Steps.user_clicks_on_bank_and_cash()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1248822900,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User clicks on new account",
+            "match": {
+              "location": "Steps.user_clicks_on_new_account()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2487311900,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User fills up the form entering \"mike\"and \"checking\"and \"75000\"and \"1138\"and \"me\"and \"6522\"and \"asdasdasd.com\" and clicks on submit",
+            "match": {
+              "arguments": [
+                {
+                  "val": "mike",
+                  "offset": 33
+                },
+                {
+                  "val": "checking",
+                  "offset": 43
+                },
+                {
+                  "val": "75000",
+                  "offset": 57
+                },
+                {
+                  "val": "1138",
+                  "offset": 68
+                },
+                {
+                  "val": "me",
+                  "offset": 78
+                },
+                {
+                  "val": "6522",
+                  "offset": 86
+                },
+                {
+                  "val": "asdasdasd.com",
+                  "offset": 96
+                }
+              ],
+              "location": "Steps.user_fills_up_the_form_entering_and_and_and_and_and_and_and_clicks_on_submit(String,String,String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 934579700,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User should be able to validate new account created",
+            "match": {
+              "location": "Steps.user_should_be_able_to_validate_new_account_created()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@NewAccount"
+          }
+        ]
+      }
+    ],
+    "name": "Validate Techfios new account functionality",
+    "description": "",
+    "id": "validate-techfios-new-account-functionality",
+    "keyword": "Feature",
+    "uri": "features/TF_New_Account.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@NewAccount"
+      }
+    ]
+  }
+]
