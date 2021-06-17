@@ -11,7 +11,7 @@ import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import junit.framework.Assert;
+import org.junit.Assert;
 import util.BasePage;
 
 public class NewAccountPage {
@@ -98,7 +98,7 @@ public class NewAccountPage {
 		
 
 		try {
-			basePage.waitForElement(driver, driver.findElement(By.xpath("//i[@class='fa-fw fa fa-check']")), 3);
+			basePage.waitForElement(driver, driver.findElement(By.xpath("//i[@class='fa-fw fa fa-check']")), 2);
 			WebElement successMessage = driver.findElement(By.xpath("//i[@class='fa-fw fa fa-check']"));
 			
 			if (successMessage.isDisplayed()) {

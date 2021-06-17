@@ -17,6 +17,8 @@ public class Steps extends BasePage{
 	
 	WebDriver driver;
 	LoginPage loginPage;
+	DashboardPage dashboardPage;
+	NewAccountPage newAccountPage;
 
 	@Given("^User is on the Techfios login page$")
 	public void user_is_on_the_techfios_login_page(){
@@ -41,6 +43,9 @@ public class Steps extends BasePage{
 	
 	@Then("^User should log in to dashboard page$")
 	public void user_should_log_in_to_dashboard_page() {
+		
+		dashboardPage = PageFactory.initElements(driver, DashboardPage.class);
+		dashboardPage.verifyDashboardPage();
 	
 	}
 	
@@ -54,18 +59,12 @@ public class Steps extends BasePage{
 	@When("^User clicks on bank and cash$")
 	public void user_clicks_on_bank_and_cash() {
 		
-		DashboardPage dashboardPage;
-		dashboardPage = PageFactory.initElements(driver, DashboardPage.class);
-		
 		dashboardPage.clickBankCash();
 		
 	}
 	
 	@When("^User clicks on new account$")
 	public void user_clicks_on_new_account() {
-		
-		DashboardPage dashboardPage;
-		dashboardPage = PageFactory.initElements(driver, DashboardPage.class);
 		
 		dashboardPage.clickNewAccount();
 	 
@@ -74,7 +73,6 @@ public class Steps extends BasePage{
 	@When("^User fills up the form entering \"([^\"]*)\"and \"([^\"]*)\"and \"([^\"]*)\"and \"([^\"]*)\"and \"([^\"]*)\"and \"([^\"]*)\"and \"([^\"]*)\" and clicks on submit$")
 	public void user_fills_up_the_form_entering_and_and_and_and_and_and_and_clicks_on_submit(String accountTitle, String description, String balance, String accountNumber, String contact, String phone, String url) {
 		
-		NewAccountPage newAccountPage;
 		newAccountPage = PageFactory.initElements(driver, NewAccountPage.class);
 		
 		BasePage basePage = new BasePage();
@@ -92,19 +90,16 @@ public class Steps extends BasePage{
 	
 	@Then("^User should be able to validate new account created$")
 	public void user_should_be_able_to_validate_new_account_created() {
-		
-		NewAccountPage newAccountPage;
-		newAccountPage = PageFactory.initElements(driver, NewAccountPage.class);
-		
+				
 		newAccountPage.verifyAccountCreated();
 		
-		takeScreenshotAtEndOfTest(driver);
 		
 	}
 	
 	@After
 	public void closeBrowser() {
 		
+		takeScreenshotAtEndOfTest(driver);
 		BrowserFactory.teardown();
 		
 	}

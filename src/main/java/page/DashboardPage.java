@@ -1,5 +1,6 @@
 package page;
 
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -26,6 +27,16 @@ public class DashboardPage {
 	
 	public void clickNewAccount() {
 		NEW_ACCOUNT_FIELD.click();
+	}
+	
+	public void verifyDashboardPage() {
+		
+		String expectedTitle = "Dashboard- iBilling";
+		String actualTitle = driver.getTitle();
+		
+		Assert.assertEquals(expectedTitle, actualTitle);
+		
+		
 	}
 
 }
