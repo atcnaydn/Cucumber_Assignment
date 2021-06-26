@@ -108,7 +108,9 @@ public class NewAccountPage {
 		} catch (NoSuchElementException e) { success = false; 
 		} catch (TimeoutException x) { success = false; }
 		
-		
+		if(success = true) {
+			System.out.println("Account created.");
+		}
 
 		Assert.assertEquals(true, success);
 

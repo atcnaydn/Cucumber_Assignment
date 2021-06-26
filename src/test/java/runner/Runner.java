@@ -9,7 +9,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 		
 		features= "classpath:features",
-		glue= "",
+		glue= "steps",
 		tags= "@NewAccount",
 		monochrome= true,
 		dryRun= false,

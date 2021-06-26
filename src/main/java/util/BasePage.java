@@ -36,7 +36,7 @@ public class BasePage {
 		wait.until(ExpectedConditions.visibilityOf(element));
 	}
 	
-public void takeScreenshotAtEndOfTest(WebDriver driver) {
+	public void takeScreenshotAtEndOfTest(WebDriver driver) {
 		
 		TakesScreenshot ts= ((TakesScreenshot) driver);
 		SimpleDateFormat formatter = new SimpleDateFormat("MMddyy_HHmmss");
@@ -48,6 +48,8 @@ public void takeScreenshotAtEndOfTest(WebDriver driver) {
 		try {
 			FileUtils.copyFile(sourcefile, new File(currentDir + "/screenshots/" + label + ".png"));
 		} catch (IOException e) {	}
+		
+		System.out.println("Screenshot taken.");
 		
 	}
 	

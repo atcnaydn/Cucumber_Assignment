@@ -110,7 +110,7 @@ formatter.match({
   "location": "Steps.user_is_on_the_Techfios_dashboard_page()"
 });
 formatter.result({
-  "duration": 3936662100,
+  "duration": 4452422500,
   "status": "passed"
 });
 formatter.scenario({
@@ -189,35 +189,35 @@ formatter.match({
   "location": "Steps.user_enters_and(String,String)"
 });
 formatter.result({
-  "duration": 389512400,
+  "duration": 314737800,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.user_clicks_submit()"
 });
 formatter.result({
-  "duration": 1819844400,
+  "duration": 2043474900,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.user_should_log_in_to_dashboard_page()"
 });
 formatter.result({
-  "duration": 22412600,
+  "duration": 62156200,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.user_clicks_on_bank_and_cash()"
 });
 formatter.result({
-  "duration": 93264200,
+  "duration": 405981900,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.user_clicks_on_new_account()"
 });
 formatter.result({
-  "duration": 707039600,
+  "duration": 1352389000,
   "status": "passed"
 });
 formatter.match({
@@ -254,18 +254,18 @@ formatter.match({
   "location": "Steps.user_fills_up_the_form_entering_and_and_and_and_and_and_and_clicks_on_submit(String,String,String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 1779412300,
+  "duration": 2092090400,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.user_should_be_able_to_validate_new_account_created()"
 });
 formatter.result({
-  "duration": 604391900,
+  "duration": 608005500,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1009900300,
+  "duration": 1137901800,
   "status": "passed"
 });
 });
